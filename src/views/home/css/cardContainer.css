@@ -1,0 +1,9 @@
+.container1 {
+    display: flex;
+    width: 70%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box; /* Ensure all elements use border-box */
+}
+

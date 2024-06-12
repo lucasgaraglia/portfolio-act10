@@ -1,0 +1,53 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 10px;
+}
+
+#pdf {
+    height: 800px;
+    width: 800px;
+}
+
+.input-group {
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    form {
+        width: 90vw;
+    }
+    #pdf {
+        height: 600px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 700px) {
+    form {
+        width: 90vw;
+    }
+    #pdf {
+        height: 500px;
+        width: 500px;
+    }
+}

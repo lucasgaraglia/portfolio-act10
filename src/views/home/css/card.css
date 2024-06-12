@@ -1,0 +1,13 @@
+img {
+    width: auto;
+    height: 200px;
+
+}
+
+.card-container1 {
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
