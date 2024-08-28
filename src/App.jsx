@@ -8,7 +8,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Generador from './views/generador_pdf/Generador';
 import Map from './views/mapaware/Map';
 import Calendario from './views/calend/Calendario';
-import About from './views/about/About';
+import Galeria from './views/galeria/Galeria';
+import Paint from './views/paint/Paint';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,8 +23,9 @@ function App() {
       <Route path={'/'} element={<Home/>} />
       <Route path={'/generador'} element={<Generador/>} />
       <Route path={'/mapaware'} element={<Map/>} />
+      <Route path={'/galeria'} element={<Galeria/>} />
       <Route path={'/calendario'} element={<Calendario/>} />
-      <Route path={'/about'} element={<About/>} />
+      <Route path={'/paint'} element={<Paint/>} />
       </Routes>
     </BrowserRouter>
     </>

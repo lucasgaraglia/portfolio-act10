@@ -1,0 +1,89 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .thumbnails {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .modal img {
+        display: block;
+        margin: auto;
+        width: 100vh;
+        height: auto;
+    }
+}
+
+.thumbnails img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    cursor: pointer;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal img {
+    display: block;
+    margin: auto;
+    height: 70vh;
+}
+
+.cerrar {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}

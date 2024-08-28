@@ -14,7 +14,10 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to={"/about"}>Sobre mí</Link>
+              <a className="nav-link" href="#">Sobre mí</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Películas</a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -23,7 +26,9 @@ const Navbar = () => {
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" to={"/generador"}>Generador de pdf</Link></li>
                 <li><Link className="dropdown-item" to={"/mapaware"}>MapAware</Link></li>
+                <li><Link className="dropdown-item" to={"/galeria"}>Galería</Link></li>
                 <li><Link className="dropdown-item" to={"/calendario"}>Calendario</Link></li>
+                <li><Link className="dropdown-item" to={"/paint"}>Paint</Link></li>
               </ul>
             </li>
           </ul>
